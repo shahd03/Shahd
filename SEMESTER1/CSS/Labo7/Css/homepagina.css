@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeead;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #ff6f61;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #a42020;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+article ul {
+    list-style: none;
+    padding: 0;
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 450px;
+    height: 400px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+header h2 {
+    color: black;
+    margin-top: 20px;
+}
+
+article ul li{
+    font-weight: bold;
+}
+
+
+.tabeldeco table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+.tabeldeco {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.tabeldeco table td, .tabeldeco table th {
+    padding: 3px 10px;
+}
+
+.tabeldeco table thead th {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
+    background: -moz-linear-gradient( red 5%, darkred 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color: #006699;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 1px solid #0070A8;
+}
+
+.tabeldeco table thead th:first-child {
+    border: none;
+}
+
+.tabeldeco table tbody td {
+    color: #00557F;
+    border-left: 1px solid #E1EEF4;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.tabeldeco table tbody .alt td {
+    background: #E1EEf4;
+    color: #00557F;
+}
+
+.tabeldeco table tbody td:first-child {
+    border-left: none;
+}
+
+.tabeldeco table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabeldeco table tfoot td div {
+    border-top: 1px solid #006699;
+    background: #E1EEf4;
+}
+
+.tabeldeco table tfoot td {
+    padding: 0;
+    font-size: 12px
+}
+
+.tabeldeco table tfoot td div {
+    padding: 2px;
+}
+
+.tabeldeco table tfoot td ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.tabeldeco table tfoot li {
+    display: inline;
+}
+
+.tabeldeco table tfoot li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 1px;
+    color: #FFFFFF;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F));
+    background: -moz-linear-gradient( red 5%, darkred 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color: #006699;
+}
+
+.tabeldeco table tfoot ul.active, .tabeldeco table tfoot ul a:hover {
+    text-decoration: none;
+    border-color: #00557F;
+    color: #FFFFFF;
+    background: none;
+
+}
+td.onbekend {
+    background-color:red !important;
+}
+li.noButton {
+    list-style-type: none;
+}
+ul.noButton {
+    list-style-type: none;
+}
