@@ -1,0 +1,129 @@
+body  {
+    margin: 0;
+    background: #E6E6E6 url('../Airbus/fotos/pagebackground.png') repeat-y center top;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    margin: 0px auto;
+    width : 960px;
+}
+
+.top {
+    height: 200px;
+    text-align: center;
+    background: url('../Airbus/fotos/bgsky3.jpg');
+    position:relative;
+    color : darkblue;
+}
+
+.top h1 {
+    margin: 0px;
+    font-size:300%;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.top p {
+    font-size:240%;
+    margin-top: 50px;
+    font-style:normal;
+    font-weight:bold;
+}
+
+.top img {
+    position:absolute;
+    bottom:60px;
+    right: 90px;
+}
+
+.news {
+    float:right;
+    width: 250px;
+    color:#666666;
+    border: 1px solid #999999;
+    background-color:#dddddd;
+    font-size: 90%;
+}
+
+.news h1 {
+    color: white;
+    background-color: blue;
+    font-size: 120%;
+    text-align:center;
+}
+
+.news p {
+    padding: 0px 10px;
+}
+
+.main {
+    float:left;
+    width: 700px;
+}
+
+.introduction>.logo {
+    float:left;
+    width : 140px;
+    box-sizing:border-box;
+    padding : 20px 20px;
+}
+
+.introduction>.text  {
+    float:left;
+    box-sizing:border-box;
+    width:560px;
+    padding : 20px 30px 20px 0px;
+    margin:0;
+    background-color: white;
+    color:black;
+    font-size: 90%;
+    text-align:justify;
+}
+
+.introduction>.text span {
+    font-style:italic;
+    color: blue;
+    font-weight:bold;
+}
+
+.gallery {
+    clear:both;
+    background-color: #999999;
+    padding : 10px 0px 10px 10px;
+}
+
+.fotokader {
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px;
+    background-color:white;
+    border: 1px dashed #999999;
+}
+.fotokader>img {
+    padding: 10px;
+}
+
+.bottom {
+    clear : both;
+    background-color: #666666;
+    color:white;
+}
+
+.block {
+    display:inline-block;
+    margin-left: 120px;
+    margin-bottom:0px;
+    line-height: 2em;
+}
+.block a {
+    color: white;
+}
+.block a:hover {
+    color: red;
+}
+
+.copyright p{
+    text-align:center;
+}
