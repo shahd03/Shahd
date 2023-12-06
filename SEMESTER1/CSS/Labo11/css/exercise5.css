@@ -20,28 +20,35 @@
 }
 .block.block2{
     background-color: #61af11;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 .block.block3{
     background-color: green;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .block.block4{
     background-color: lightgreen;
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
 }
 .block.block5{
-    visibility: hidden;
-}
+    background-color: greenyellow;
+    grid-column-start: 2;
+    grid-column-end: 4;}
 .block.block6{
-    visibility: hidden;
+    background-color: darkgreen;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .block.block7{
-    visibility: hidden;
+    background-color: green;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 .block.block8{
-    visibility: hidden;
+    background-color: #225606;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
