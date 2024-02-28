@@ -2,8 +2,6 @@ let familieLeden = ["Moeder", "Vader", "Zus", "Broer", "Tante"];
 const setup = () => {
 console.log(familieLeden.length); //5 elementen
 console.log(familieLeden[0], familieLeden[2], familieLeden[4]); //Moeder, Zus, Tante
-
-    addName();
     console.log(familieLeden.join())
 }
 
