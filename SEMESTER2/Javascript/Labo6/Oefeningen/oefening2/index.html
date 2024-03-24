@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        .listitem {
+            color: red;
+        }
+        #shahd{
+           width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<h1>About Me :)</h1>
+
+<ul>
+    <li class="listitem">Nickname: <span id="nickname">Shavix</span></li>
+    <li class="listitem">Favorites: <span id="favorites">Bubble Tea</span></li>
+    <li class="listitem">Hometown: <span id="hometown">Gaza</span></li>
+</ul>
+
+<img src="photo/shahd.jpg" alt="me" id="shahd">
+
+<script>
+    const setup = () => {
+    const listItems = document.querySelectorAll("li");
+    listItems.forEach(item => {
+        item.classList.add("listitem");
+    })};
+        window.addEventListener("load", setup);
+</script>
+</body>
+</html>
