@@ -20,7 +20,7 @@ const setup = () => {
 //Hier is het tweede programma:
     let student1Json = JSON.parse(
         '{"voornaam":"Shahd",' +
-        '"naam":"Abuzubaida",' +
+        '"naam":"zu",' +
         '"geboorteDatum":"2003-10-04T00:00:00.000Z",' +
         '"studie":"Informatica",' +
         '"vakken":["Programmeren","Databases","Netwerken"],' +
