@@ -1,10 +1,10 @@
-const setup = (   ) => {
+const setup = () => {
     let button = document.querySelector("#button");
     button.addEventListener("click", search);
     restoreLocalStorage();
 };
 
-const search = (   ) => {
+const search = () => {
     const searchInput = document.getElementById("search").value;
     const commando = searchInput.substring(1, 2);
     let query = searchInput.substring(3).trim();
@@ -39,13 +39,13 @@ const search = (   ) => {
 
     const history = document.getElementById("history");
 
-    let search = document.createElement("h6");
-    search.append(searchInput.substring(2));
-    search.classList.add("search");
+    let searchElement = document.createElement("h6");
+    searchElement.textContent = searchInput.substring(2);
+    searchElement.classList.add("search");
 
-    let button = document.createElement("button");
-    button.innerText = "GO!";
-    button.addEventListener("click", search_again);
+    let buttonElement = document.createElement("button");
+    buttonElement.innerText = "GO!";
+    buttonElement.addEventListener("click", search_again);
 
     if(!invalid_commando){
         const wrapperdiv = document.createElement("div");
@@ -62,39 +62,39 @@ const search = (   ) => {
                 div.classList.add("Youtube");
                 div.classList.add("card");
                 div.append(title);
-                button.classList.add("dark_gray_button");
+                buttonElement.classList.add("dark_gray_button");
                 break;
             case "g":
                 title.innerText = "Google";
                 div.classList.add("Google");
                 div.classList.add("card");
                 div.append(title);
-                button.classList.add("orange_button");
+                buttonElement.classList.add("orange_button");
                 break;
             case "t":
                 title.innerText = "Twitter";
                 div.classList.add("Twitter");
                 div.classList.add("card");
                 div.append(title);
-                button.classList.add("black_button");
+                buttonElement.classList.add("black_button");
                 break;
             case "i":
                 title.innerText = "Instagram";
                 div.classList.add("Instagram");
                 div.classList.add("card");
                 div.append(title);
-                button.classList.add("yellow_button");
+                buttonElement.classList.add("yellow_button");
                 break;
         }
-        div.append(search);
-        div.append(button);
+        div.append(searchElement);
+        div.append(buttonElement);
         wrapperdiv.append(div);
         history.appendChild(wrapperdiv);
         saveToLocalStorage();
     }
 };
 
-const search_again = (   ) => {
+const search_again = () => {
     const searchInput = document.getElementById("search").value;
     const commando = searchInput.substring(1, 2);
 
@@ -116,28 +116,28 @@ const search_again = (   ) => {
     }
 };
 
-//werkt niet
-const saveToLocalStorage = (   ) => {
+const saveToLocalStorage = () => {
     localStorage.clear();
     let array = [];
-    let divs = document.querySelectorAll(".wrapperdiv").values();
-    for (let i = 0; i < divs.length; i++) {
-        let wrapperdiv = divs[i];
-        array.push(wrapperdiv);
-    }
+    let divs = document.querySelectorAll(".wrapperdiv");
+    divs.forEach(wrapperdiv => {
+        array.push(wrapperdiv.outerHTML);
+    });
     let save = JSON.stringify(array);
     localStorage.setItem("save", save);
 };
 
-//werkt niet
-const restoreLocalStorage = (   ) => {
+const restoreLocalStorage = () => {
     const history = document.getElementById("history");
 
     let stringArray = localStorage.getItem("save");
-    let array = JSON.parse(stringArray);
-
-    for (let i = 0; i < array.length; i++) {
-        history.appendChild(array[i].value);
+    if (stringArray) {
+        let array = JSON.parse(stringArray);
+        array.forEach(item => {
+            let wrapperDiv = document.createElement("div");
+            wrapperDiv.innerHTML = item;
+            history.appendChild(wrapperDiv.firstChild);
+        });
     }
 };
 
