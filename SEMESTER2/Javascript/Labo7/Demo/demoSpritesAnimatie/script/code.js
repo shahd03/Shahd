@@ -1,4 +1,4 @@
-let UPDATE_DELAY=50; // constante voor timer delay, in milliseconden
+let UPDATE_DELAY=150; // constante voor timer delay, in milliseconden
 let speedX;
 let speedY;
 
