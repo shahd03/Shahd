@@ -17,6 +17,8 @@ body {
     margin-bottom: 5px;
     border-radius:10px;
     border: solid #4f064f 5px;
+    height: 155px;
+    width: 200px;
 }
 
 #button {

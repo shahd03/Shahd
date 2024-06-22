@@ -10,8 +10,8 @@
 
 .vak {
 	display:inline-block;
-	width:100px;
-	height:100px;
+	width:130px;
+	height:130px;
 	margin:10px;
 	padding:1px;
 	overflow:hidden; /* toegevoegd om collapsing margins tussen parent (.vak) en child (.kaart) te vermijden */
@@ -19,8 +19,8 @@
 }
 
 .kaart {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border : 1px solid black;
     box-sizing: border-box; /* zodat we size niet +2 moeten doen wegens 1px border ;) */
 }
@@ -42,4 +42,7 @@
 
 .kaart.voorkant.fout {
 	background-color:red;
+}
+body{
+	background-color: #d9c9ea;
 }

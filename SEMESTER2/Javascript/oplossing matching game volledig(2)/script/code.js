@@ -3,8 +3,8 @@ let global = {
 	 AANTAL_KAARTEN_PER_AFBEELDING:2,
 	AANTAL_KAARTEN_HORIZONTAAL:6,
 	 PREFIX_KAART_PATH:"image/kaart",
-	 SUFFIX_KAART_PATH:".png",
-	 ACHTERKANT_PATH:"image/achterkant.png",
+	 SUFFIX_KAART_PATH:".jpg",
+	 ACHTERKANT_PATH:"image/achterkant.jpg",
 }
 
 
